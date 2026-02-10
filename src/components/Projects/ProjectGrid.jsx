@@ -112,6 +112,7 @@ const ProjectGrid = ({ activeFilter }) => {
   }, []);
 
   // console.log(projects);
+  //Cheking the change
 
   // Memoized filtered projects
   const filteredProjects = useMemo(() => {
