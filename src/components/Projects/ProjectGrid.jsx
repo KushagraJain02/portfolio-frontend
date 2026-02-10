@@ -107,7 +107,11 @@ const ProjectGrid = ({ activeFilter }) => {
     fetchProjects();
   }, []);
 
-  console.log(projects);
+  useEffect(() => {
+    console.log("API BASE:", import.meta.env.VITE_API_BASE_URL);
+  }, []);
+
+  // console.log(projects);
 
   // Memoized filtered projects
   const filteredProjects = useMemo(() => {
