@@ -9,6 +9,8 @@ const CPStats = () => {
   useEffect(() => {
     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
+    console.log("API BASE:", API_BASE_URL);
+
     const fetchStats = async () => {
       try {
         const res = await axios.get(`${API_BASE_URL}/cp`);
